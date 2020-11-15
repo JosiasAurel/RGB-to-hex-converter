@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+input {
+  border: solid;
+  border-color: transparent;
+  background-color: snow;
+  padding: 0.5em;
+  border-radius: 4px;
+  color: grey;
+  box-shadow: 0 0 4px 1px rgba(82, 82, 82, 0.226);
+  margin: 0.1em;
+}
+
+input:focus {
+  border-color: skyblue;
+  outline: none;
+}
+
+#converted {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#converted > span {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: snow;
+  box-shadow: 0 0 4px 1px rgba(82, 82, 82, 0.226);
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#converted > span > h3 {
+  margin: 1em;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+form > button {
+  border: solid;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: rgb(25, 190, 255);
+  margin: 0.2em;
+  padding: 0.4em;
+}
+
+form > button:focus {
+  outline: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+footer > h2 > a {
+  text-decoration: none;
+  border-bottom: 2px dotted blue;
+  color: grey;
+}
+
+@media screen and (max-width: 420px) {
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  input {
+    margin: 2%;
+  }
+
+  #converted > span {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
