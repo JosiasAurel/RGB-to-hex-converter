@@ -1,0 +1,20 @@
+{
+ "manifest_version": 2,
+ "name": "RGB to hex converter",
+ "version": "1.0.0",
+ "description": "This is a RGB to Hexadecimal color converter.",
+ "short_name": "RGB-Hex",
+ "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "css": ["style.css"],
+     "js": ["main.js"]
+   }
+ ],
+ "browser_action": {
+   "default_title": "Convert RGB to hex",
+   "default_popup": "index.html"
+   
+ }
+}
